@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="hu.brazzo.andrd.login.viewmodel.SignInViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="290dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:src="@mipmap/ic_launcher"
+                    android:text="logo" />
+
+                <LinearLayout style="@style/customFormLayout">
+
+                    <hu.brazzo.andrd.app.common.FontTextView
+                        android:id="@+id/signInLabel"
+                        style="@style/customTextViewTitle"
+                        android:layout_height="90dp"
+                        android:text="@string/signInTitle" />
+
+                    <!--  Email Label -->
+                    <android.support.design.widget.TextInputLayout style="@style/customTextInputLayout">
+
+                        <hu.brazzo.andrd.app.common.FontEditText
+                            android:id="@+id/etUsername"
+                            style="@style/customEditText"
+                            android:hint="@string/signInUsernameHint"
+                            android:inputType="textEmailAddress" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout style="@style/customTextInputLayout">
+
+                        <hu.brazzo.andrd.app.common.FontEditText
+                            android:id="@+id/etPassword"
+                            style="@style/customEditText"
+                            android:hint="@string/signInPasswordHint"
+                            android:inputType="textPassword" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnSignIn"
+                        style="@style/customButton"
+                        android:onClick="@{viewModel::onSignInClicked}"
+                        android:text="@string/signInButton" />
+
+                    <hu.brazzo.andrd.app.common.FontTextView
+                        android:id="@+id/newPasswordLabel"
+                        style="@style/customTextViewTitle"
+                        android:background="@null"
+                        android:onClick="@{viewModel::onResetPasswordClicked}"
+                        android:text="@string/signInNewPwdTitle"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

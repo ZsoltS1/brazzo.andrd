@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ANDRD</string>
+
+    <string name="font_helvetica_regular">fonts/HelveticaNeueLTStd-Lt.ttf</string>
+
+    <!--Error-->
+    <string name="error_device_info">Device Info</string>
+    <string name="error_exception_type">Exception Type</string>
+    <string name="error_cause">Cause</string>
+    <string name="error_stacktrace">Stacktrace</string>
+    <string name="errorMessage">Error</string>
+    <string name="close">Close</string>
+
+    <!--Dialog buttons-->
+    <string name="dialog_action_ok">Ok</string>
+    <string name="loadingContent">Please waiting...</string>
+    <string name="loadingTitle">Loading...</string>
+
+    <!--Login Screen-->
+    <string name="loginTitle">Create your account instantly</string>
+    <string name="loginSignUpButton">Sign Up Now</string>
+    <string name="loginSignInLabel">I have an account, <u>Log in here</u></string>
+
+    <!--Login-->
+    <string name="signInTitle">Sign In</string>
+    <string name="signInButton">Sign In</string>
+    <string name="signInUsernameHint">Username</string>
+    <string name="signInPasswordHint">Password</string>
+    <string name="signInNewPwdTitle">Reset your password</string>
+
+
+</resources>
