@@ -4,9 +4,10 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatEditText;
 import hu.brazzo.andrd.R;
 
-public class FontEditText extends android.support.v7.widget.AppCompatEditText {
+public class FontEditText extends AppCompatEditText {
 
     public FontEditText(Context context) {
         super(context);
